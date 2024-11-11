@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/excelsior-sans');
+
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jost", sans-serif;
+  }
+
+  
+#title {
+        /* font-family: 'EXCELSIOR SANS', sans-serif; */
+        font-family: "Jost", sans-serif;
+        /* font-style: italic; */
+        letter-spacing: 2px;   
+        font-weight: 800;
+    }
