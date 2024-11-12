@@ -9,6 +9,13 @@
     font-family: "Jost", sans-serif;
   }
 
+body {
+  background-image:url(../img/Background/blob-scene-haikei.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}  
   
 #title {
         /* font-family: 'EXCELSIOR SANS', sans-serif; */
