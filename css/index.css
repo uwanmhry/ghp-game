@@ -1,26 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Mochiy+Pop+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Mochiy+Pop+One&display=swap');
-@import url('https://fonts.cdnfonts.com/css/excelsior-sans');
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.cdnfonts.com/css/excelsior-sans");
 
+/* Gaya untuk link yang aktif */
+.nav-link.active {
+  color: #ff0000; /* Ganti dengan warna yang diinginkan */
+  font-weight: bold;
+}
+
+/* Navbar dengan transisi */
+#navbar {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white; /* Warna teks */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 0, 0, 0.8); /* Warna neon */
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.8); /* Glow neon */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%; /* Full width pada hover atau link aktif */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: rgba(255, 0, 0, 0.8); /* Warna teks berubah saat hover/aktif */
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: rgba(255, 0, 0, 0.8); /* Efek hover pada link */
+}
 .anton-sc-regular {
-    font-family: "Anton SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Jost", sans-serif;
-  }
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Jost", sans-serif;
+}
 
-body {
-  background-image:url(../img/Background/blob-scene-haikei.png);
+/* body {
+  background-image: url(../img/Background/blob-scene-haikei.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}  
-  
+} */
+
 #title {
-        /* font-family: 'EXCELSIOR SANS', sans-serif; */
-        font-family: "Jost", sans-serif;
-        /* font-style: italic; */
-        letter-spacing: 2px;   
-        font-weight: 800;
-    }
+  /* font-family: 'EXCELSIOR SANS', sans-serif; */
+  font-family: "Jost", sans-serif;
+  /* font-style: italic; */
+  letter-spacing: 2px;
+  font-weight: 800;
+}
