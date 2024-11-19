@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="bg-black shadow-md rounded-lg" style="width: 270px; height: 350px;">
+              <h3 class="text-xl font-semibold">Card 1</h3>
+              <p class="text-gray-600 mt-2">Content of Card 1</p>
+            </div>
+          </div>
+          <!-- Tambahkan Card lainnya hingga Card ke-8 -->
+          <div class="swiper-slide">
+            <div class="bg-white shadow-md rounded-lg p-4" style="width: 270px; height: 350px;">
+              <h3 class="text-xl font-semibold">Card 2</h3>
+              <p class="text-gray-600 mt-2">Content of Card 2</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-md rounded-lg p-4" style="width: 270px; height: 350px;">
+              <h3 class="text-xl font-semibold">Card 2</h3>
+              <p class="text-gray-600 mt-2">Content of Card 2</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-md rounded-lg p-4" style="width: 270px; height: 350px;">
+              <h3 class="text-xl font-semibold">Card 2</h3>
+              <p class="text-gray-600 mt-2">Content of Card 2</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="bg-white shadow-md rounded-lg p-4" style="width: 270px; height: 350px;">
+              <h3 class="text-xl font-semibold">Card 2</h3>
+              <p class="text-gray-600 mt-2">Content of Card 2</p>
+            </div>
+          </div>
+          <!-- Ulangi hingga total 8 card -->
+        </div>
+      
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+</body>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3, // Menampilkan 3 card per view
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      
+    });
+  </script>
+  
+</html>

@@ -1,0 +1,75 @@
+{
+ "array":[
+    
+    {
+        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
+        "title": "GAME SANTRI BROS",
+        "name": "Rizky Herdiansyah",
+        "profileImage": "./img/Profile/Rizky.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
+    },
+
+    {
+        "image": "./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.jpg",
+        "title": "FLAPPY HIJAIYAH",
+        "name": "Uwan Maharaya",
+        "profileImage": "./img/Profile/Uwan.png",
+        "link":  "https://gd.games/instant-builds/72c4ab75-af1e-4f7d-9d5e-2de7a41be85d" 
+    },
+
+    {
+        "image": "./img/Thumbnail/Thumbnain-M3H.png",
+        "title": "MATCH 3 HIJAIYAH",
+        "name": "Uwan Maharaya",
+        "profileImage": "./img/Profile/Uwan.png",
+        "link":  "hhttps://gd.games/instant-builds/60e1a103-6d8d-4b82-8d82-c3a265674ed0" 
+    },
+
+    {
+        "image": "./img/Thumbnail/Thumbnail-Writting.png.png",
+        "title": "WRITTING HIJAIYAH",
+        "name": "Saepul Fajari",
+        "profileImage": "./img/Profile/Fajari.png",
+        "link": "https://gd.games/instant-builds/9e02016c-52bb-4b5f-b1c6-fa60204a0eb9"
+    },
+
+    {
+        "image": "./img/Thumbnail/Thumbnail-Quiz.png",
+        "title": "QUIZ ISLAMIX",
+        "name": "Saepul Fajari",
+        "profileImage": "./img/Profile/Fajari.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+    },
+
+    {
+        "image": "./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png",
+        "title": " CATCHING THE HIJAIYAH",
+        "name": "Hady Satria P.",
+        "profileImage": "./img/Profile/Hady.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+    },
+    
+    {
+        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
+        "title": " HUNTER HIJAIYAH",
+        "name": "Abdul Aziz",
+        "profileImage": "./img/Profile/Aziz.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+    },
+    {
+        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
+        "title": " HUNTER HIJAIYAH",
+        "name": "Abdul Aziz",
+        "profileImage": "./img/Profile/Aziz.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+    },
+    {
+        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
+        "title": " HUNTER HIJAIYAH",
+        "name": "Abdul Aziz",
+        "profileImage": "./img/Profile/Aziz.png",
+        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+    }
+
+    ]
+}

@@ -12,436 +12,164 @@
 </head>
 
 <body class="flex flex-col justify-center items-center min-h-screen">
-    <!-- Header -->
     <header class="w-full">
         <h1 class="text-[3rem] text-white text-center font-bold mt-10"><span class="text-red-700">GSI</span> HOME PRODUCTION</h1>
     </header>
+    
+    <!-- FITU SLIDER GAME -->
+        <div class="swiper w-full h-auto md:max-w-[1200px]">
+            <div class="swiper-wrapper" id="swiper-wrapper" >
+            </div>
+            <div class="pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+   <script>
 
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide text-white">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Santri-Bros.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0  bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    GAME SANTRI BROS
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/8.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Rizky Herdiansyah</p>
-                    </div>
-                </div>
-                <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
+fetch('./json/card.json')
+    .then(response => response.json())
+    .then(data => {
+        const swipeWrap = document.getElementById('swiper-wrapper');
+        const cards = data.array;
 
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Santri-Bros.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0  bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    GAME SANTRI BROS
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/8.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Rizky Herdiansyah</p>
-                    </div>
-                </div>
-                <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
- <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.png.jpg" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                 style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    FLAPPY HIJAIYAH
-                </p>
-            </div>
-            <div class="absolute bottom-5 right-[10px]   mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/21.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Uwan Maharaya</p>
-                    </div>
-                </div>
-                <a href="https://gd.games/instant-builds/72c4ab75-af1e-4f7d-9d5e-2de7a41be85d" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
+        if (cards.length === 0) {
+            console.log("Tidak ada card untuk ditampilkan.");
+            return;
+        }
 
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+        // Menambahkan slide ke swiper
+        cards.forEach(card => {
+            const slide = document.createElement('div');
+            slide.classList.add('swiper-slide');
+            slide.innerHTML = `
+                <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg mx-[5rem] text-white" style="width: 270px; height: 350px;">
+                    <img class="object-cover w-full h-full" src=${card.image} alt="Game Image">
+                    <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
+                        <p id="title" class="text-white text-md tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed;">
+                            ${card.title}
+                        </p>
+                    </div>
+                    <div class="absolute bottom-5 left-0 px-6">
+                        <div class="flex items-center mb-4">
+                            <img class="w-10 h-10 border-2 rounded-full mr-2" src=${card.profileImage} alt="Profile Image of ${card.name}">
+                            <div>
+                                <p class="font-semibold text-sm">Created By.</p>
+                                <p class="text-md text-gray-300">${card.name}</p>
+                            </div>
+                        </div>
+                        <a href=${card.link} target="_blank" rel="noopener noreferrer">
+                            <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
+                                <span class="material-icons text-base">play_arrow</span>
+                                PLAY
+                            </button>
+                        </a>
+                    </div> 
+                </div>`;
+            swipeWrap.appendChild(slide);
+        });
 
-    <!-- <div class=" flex justify-center gap-10 mt-12 mb-8"> -->
-    <div class="max-w-screen-lg flex flex-wrap justify-center gap-10 mt-12 mb-8">
-        <!-- GAME 1 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Santri-Bros.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0  bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    GAME SANTRI BROS
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/8.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Rizky Herdiansyah</p>
-                    </div>
-                </div>
-                <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 2 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.png.jpg" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                 style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    FLAPPY HIJAIYAH
-                </p>
-            </div>
-            <div class="absolute bottom-5 right-[10px]   mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/21.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Uwan Maharaya</p>
-                    </div>
-                </div>
-                <a href="https://gd.games/instant-builds/72c4ab75-af1e-4f7d-9d5e-2de7a41be85d" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 3 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Match-3.png.jpg" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                   MATCH 3 HIJAIYAH 
-                </p>
-            </div>
-            <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/21.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Uwan Maharaya</p>
-                    </div>
-                </div>
-                <a href="https://gd.games/instant-builds/60e1a103-6d8d-4b82-8d82-c3a265674ed0" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 4 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Writting.png.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                   WRITING HIJAIYAH
-                </p>
-            </div>
-            <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/24.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">M. Saepul Fajari</p>
-                    </div>
-                </div>
-                <a href="https://gd.games/instant-builds/9e02016c-52bb-4b5f-b1c6-fa60204a0eb9" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-8">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 5 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Quiz.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p id="title" class="text-white text-md tracking-widest" 
-                   style="writing-mode: vertical-rl; text-orientation: mixed;">
-                   QUIZ ISLAMIC
-                </p>
-            </div>
-            <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/24.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">M. Saepul Fajari</p>
-                    </div>
-                </div>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-8">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 6 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-                <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FA4032] to-[#FAB12F] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                    <p id="title" class="text-white text-md tracking-widest" 
-                       style="writing-mode: vertical-rl; text-orientation: mixed;">
-                       CATCHING THE HIJAIYAH
-                    </p>
-                    <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                        <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                    </div>
-                </div>
-                <div class="absolute bottom-5 left-0 px-6">
-                    <div class="flex items-center mb-4">
-                     <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/16.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Hady Satria P.</p>
-                    </div>
-                </div>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-[#FA4032] to-[#FAB12F] hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 7 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-                <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FA4032] to-[#FAB12F] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                    <p id="title" class="text-white text-md tracking-widest" 
-                       style="writing-mode: vertical-rl; text-orientation: mixed;">
-                       CATCHING THE HIJAIYAH
-                    </p>
-                    <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                        <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                    </div>
-                </div>
-                <div class="absolute bottom-5 left-0 px-6">
-                    <div class="flex items-center mb-4">
-                     <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/16.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Hady Satria P.</p>
-                    </div>
-                </div>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <button class="flex items-center bg-gradient-to-r from-[#FA4032] to-[#FAB12F] hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                        <span class="material-icons text-base">play_arrow</span>
-                        PLAY
-                    </button>
-                </a>
-            </div> 
-        </div>
-<!-- GAME 8 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/credits_@kisakilw.jpeg" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FA4032] to-[#FAB12F] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p class="text-white text-xs tracking-widest font-bold" style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    HUNTER HIJAIYAH
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/14.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Abdul Azizs</p>
-                    </div>
-                </div>
-                <button class="flex items-center bg-gradient-to-r from-[#FA4032] to-[#FAB12F] hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                    <span class="material-icons text-base">play_arrow</span>
-                    PLAY
-                </button>
-            </div> 
-        </div>
-<!-- GAME 9 -->
-        <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/credits_@kisakilw.jpeg" alt="Game Image">
-            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FA4032] to-[#FAB12F] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p class="text-white text-xs tracking-widest font-bold" style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    HUNTER HIJAIYAH
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/14.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Abdul Azizs</p>
-                    </div>
-                </div>
-                <button class="flex items-center bg-gradient-to-r from-[#FA4032] to-[#FAB12F] hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                    <span class="material-icons text-base">play_arrow</span>
-                    PLAY
-                </button>
-            </div> 
-        </div>
+        // Inisialisasi Swiper
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 13,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: false, 
+            breakpoints: {
+            640: {
+                slidesPerView: 1, // 1 slide per view di layar kecil
+            },
+            768: {
+                slidesPerView: 2, // 2 slide per view di layar medium
+            },
+            1024: {
+                slidesPerView: 3, // 3 slide per view di layar besar
+            }
+        }
+            
+        });
 
-        <!-- <div class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white" style="width: 270px; height: 350px;">
-            <img class="object-cover w-full h-full" src="./img/credits_@kisakilw.jpeg" alt="Game Image">
-            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-            <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FA4032] to-[#FAB12F] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
-                <p class="text-white text-xs tracking-widest font-bold" style="writing-mode: vertical-rl; text-orientation: mixed;">
-                    HUNTER HIJAIYAH
-                </p>
-                <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
-                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-                </div>
-            </div>
-            <div class="absolute bottom-5 left-0 px-6">
-                <div class="flex items-center mb-4">
-                    <img class="w-10 h-10 border-2 rounded-full mr-2" src="./img/Profile/14.png" alt="Profile Image of Rizky Herdiansyah">
-                    <div>
-                        <p class="font-semibold text-sm">Created By.</p>
-                        <p class="text-md text-gray-300">Abdul Azizs</p>
-                    </div>
-                </div>
-                <button class="flex items-center bg-gradient-to-r from-[#FA4032] to-[#FAB12F] hover:from-purple-600 hover:to-teal-600 text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
-                    <span class="material-icons text-base">play_arrow</span>
-                    PLAY
-                </button>
-            </div> 
-        </div> -->
-    </div>
+        // Mengecek jika jumlah slide sama dengan data yang ada
+        if (cards.length < 3) { // Ubah jumlah 3 sesuai jumlah slides per view
+            swiper.on('reachEnd', () => {
+                // Menonaktifkan tombol next setelah slide terakhir
+                swiper.navigation.nextEl.disabled = true;
+            });
+        }
+
+    })
+    .catch(error => {
+        console.error('Error loading JSON data:', error);
+    });
+   </script>
 </body>
 
+    <style>  
+    
 
+        .swiper-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        }
 
+        .swiper-slide {
+        width: 270px !important; 
+        height: 350px !important; 
+        margin-right: 20px;
+        }
 
+        .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    <style>
-        .swiper 
-        {
-        width: 100%;
-        height: auto;
+        /* Kontrol dan pagination */
+        .swiper-button-next,
+        .swiper-button-prev {
+        color: white;
+        }
+
+        .swiper-pagination-bullet {
+        background: #000;
+        }
+
+        .swiper-pagination-bullet-active {
+        background: #ff4081;
         }
     </style>
 
-    <script>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
+    <!-- <script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 4, // Jumlah slide yang ditampilkan per view
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
+        pagination: {
+            clickable: true,
         },
+        loop: true,
+        breakpoints: {
+            640: {
+            slidesPerView: 1, // 1 slide per view di layar kecil
+            },
+            768: {
+            slidesPerView: 2, // 2 slide per view di layar medium
+            },
+            1024: {
+            slidesPerView: 3, // 3 slide per view di layar besar
+            }
+        }
     });
-    </script>
+    </script> -->
 </html>

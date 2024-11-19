@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/swiper.css">
+</head>
+<body>
+  <section>
+    <header class="w-full">
+      <h1 class="text-[3rem] text-white text-center font-bold mt-[10rem]"><span class="text-red-700">GSI</span> HOME PRODUCTION</h1>
+   </header>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card bg-gradient-to-t from-black to-transparent">
+              <div class="front ">
+                <img src="./img/Profile/lala.jpg" alt="">
+                <button class="text-white">PLAY</button>
+              </div>
+              <div class="back">
+                <img src="./img/Profile/Fajari.png" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic perspiciatis earum soluta id quasi, laborum et nobis saepe ratione vel sit officia consequatur veniam! Recusandae vero corrupti totam hic?
+                </p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="front">
+                <img src="./img/Profile/Aziz.png" alt="">
+                <button class="text-white">PLAY</button>
+              </div>
+              <div class="back">
+                <img src="./img/Profile/Fajari.png" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic perspiciatis earum soluta id quasi, laborum et nobis saepe ratione vel sit officia consequatur veniam! Recusandae vero corrupti totam hic?
+                </p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="front">
+                <img src="./img/Profile/Uwan.png" alt="">
+                <button class="text-white">PLAY</button>
+              </div>
+              <div class="back">
+                <img src="./img/Profile/Fajari.png" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic perspiciatis earum soluta id quasi, laborum et nobis saepe ratione vel sit officia consequatur veniam! Recusandae vero corrupti totam hic?
+                </p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="front">
+                <img src="./img/Profile/Aziz.png" alt="">
+                <button class="text-white">PLAY</button>
+              </div>
+              <div class="back">
+                <img src="./img/Profile/Fajari.png" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic perspiciatis earum soluta id quasi, laborum et nobis saepe ratione vel sit officia consequatur veniam! Recusandae vero corrupti totam hic?
+                </p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="front">
+                <img src="./img/Profile/Aziz.png" alt="">
+                <button class="text-white">PLAY</button>
+              </div>
+              <div class="back">
+                <img src="./img/Profile/Fajari.png" alt="">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo hic perspiciatis earum soluta id quasi, laborum et nobis saepe ratione vel sit officia consequatur veniam! Recusandae vero corrupti totam hic?
+                </p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="swiper-slide relative max-w-xs rounded-xl overflow-hidden shadow-lg mx-[5rem] text-white" style="width: 270px; height: 350px;">
+            <img class="object-cover w-full h-full" src=../img/Thumbnail/Thumbnail-Santri-Bros.png alt="Game Image">
+            <div class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"></div>
+            <div class="absolute top-0 right-0 bg-gradient-to-b from-purple-500 to-teal-500 w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl">
+                <p id="title" class="text-white text-md tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed;">
+                    ${card.title}
+                </p>
+            </div>
+            <div class="absolute bottom-5 left-0 px-6">
+                <div class="flex items-center mb-4">
+                    <img class="w-10 h-10 border-2 rounded-full mr-2" src=../img/Profile/Fajari.png alt="Profile Image of ${card.name}">
+                    <div>
+                        <p class="font-semibold text-sm">Created By.</p>
+                        <p class="text-md text-gray-300">${card.name}</p>
+                    </div>
+                </div>
+                <a href=${card.link} target="_blank" rel="noopener noreferrer">
+                    <button class="flex items-center bg-gradient-to-r from-purple-500 to-teal-500 hover:from-[#FA4032] hover:to-[#FAB12F] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300">
+                        <span class="material-icons text-base">play_arrow</span>
+                        PLAY
+                    </button>
+                </a>
+            </div> 
+        </div>;
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+</body>
+</html>
