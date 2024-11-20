@@ -1,11 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Mochiy+Pop+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Jost:ital,wght@0,100..900;1,100..900&family=Mochiy+Pop+One&display=swap");
 @import url("https://fonts.cdnfonts.com/css/excelsior-sans");
+@import url('https://fonts.cdnfonts.com/css/humane');
+@import url('https://fonts.cdnfonts.com/css/median');
+
 
 /* Gaya untuk link yang aktif */
 .nav-link.active {
   color: #ff0000; /* Ganti dengan warna yang diinginkan */
   font-weight: bold;
+}
+
+.title-hero {
+  font-family: 'Median', sans-serif;
+  font-size: 5rem !important;
+  align-items: center;
+  justify-content: center;
+  text-align:start;
+  color: #fff;
+  line-height: 4rem;
+  /* text-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000, 0 0 24px #ff0000, 0 0 32px #ff0000; */
+}
+
+.sub-hero {
+  font-family: 'Median', sans-serif;
+  font-size: 5rem !important;
+  align-items: center;
+  justify-content: center;
+  text-align:end;
+  color: #fff;
+  line-height: 3.7rem;
+  position: relative;
+  left: 0.3em;
+  margin-top: 1rem !important;
+}
+
+.span-sub {
+  font-family: 'Median', sans-serif;
+  font-size: 5rem !important;
+  align-items: center;
+  justify-content: center;
+  text-align:start;
+  color:rgb(219, 0, 0);
+  /* text-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000, 0 0 24px #ff0000, 0 0 32px #ff0000; */
+}
+
+.span-title {
+  font-family: 'Median', sans-serif;
+  font-size: 5rem !important;
+  align-items: center;
+  justify-content: center;
+  text-align:start;
+  color:rgb(219, 0, 0);
+  /* text-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000, 0 0 24px #ff0000, 0 0 32px #ff0000; */
 }
 
 /* Navbar dengan transisi */

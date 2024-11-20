@@ -14,17 +14,17 @@
   </head>
   <body class="bg-gray-900 text-white font-sans">
     <!-- Hero Section -->
-    <nav id="navbar" class="fixed top-0 left-0 w-full bg-black shadow-lg z-50 transition-transform duration-300">
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent z-50 transition-transform duration-300">
       <div class="flex items-center justify-between px-4 py-3">
         <div class="flex items-center">
           <a href="#">
             <img src="img/Icon/logo-ghp.png" alt="Logo" class="w-10 h-10 mr-2"/>
           </a>
           <a href="#">
-            <h1 class="text-2xl font-bold">GSI Home Production</h1>
+            <h1 class="text-2xl font-bold">GHP</h1>
           </a>
         </div>
-        <div class="flex items-center relative">
+        <!-- <div class="flex items-center relative">
           <a href="#home" class="nav-link mr-4">Home</a>
           <div class="relative group">
             <a href="#about" class="nav-link mr-4">About</a>
@@ -44,7 +44,7 @@
             </div>
           </div>
           <a href="#games" class="nav-link mr-4">Games</a>
-        </div>
+        </div> -->
       </div>
     </nav>
 
@@ -52,7 +52,7 @@
     <section id="home" class="relative bg-cover bg-center h-screen overflow-hidden">
       <!-- Video Background -->
       <video
-        src="vid/Flappy Hijaiyah.mp4"
+        src="vid/Hero.mp4"
         class="absolute top-0 left-0 w-full h-full object-cover"
         autoplay
         muted
@@ -61,35 +61,31 @@
       <!-- Gradient Overlay -->
       <div
         class="absolute inset-0"
+        
         style="
           background: linear-gradient(
             to top right,
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.85),
-            rgba(255, 0, 0, 0.25),
-            rgba(255, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.773),
+            rgba(0, 0, 0, 0.773),
             rgba(0, 0, 0, 0.85),
             rgba(0, 0, 0, 0.75)
           );">
       </div>
 
       <!-- Content -->
-      <div class="absolute inset-0 flex items-center px-8">
+      <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 px-8">
         <div class="max-w-lg text-left text-white z-10">
-          <h1 class="text-4xl font-bold mb-4">Lorem, ipsum dolor.</h1>
-          <p class="text-lg mb-8">
-            Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim. Morem
-            ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
-            molestie.
-          </p>
-          <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
+          <h1 class="title-hero"><span class="span-title">GSI</span> HOME PRODUCTION</h1>
+          <h1 class="sub-hero mt-10"><span></span><span class="span-sub">GAME</span> CENTER</h1>
+          <!-- <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
             <button
               class="flex items-center bg-[#FF0000] text-white font-semibold py-1 px-3 rounded-full text-md hover:bg-opacity-80 duration-300">
               PLAY
               <span class="material-icons text-md">play_arrow</span>
             </button>
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
@@ -216,7 +212,19 @@
 
     <!-- Games Section -->
 
-    <section id="games">
+    <section id="games"  
+      style="
+      background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85),
+      rgba(255, 0, 0, 0.15),
+      rgba(255, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.85)
+      
+    );">
       <header class="w-full">
         <h1 class="text-[3rem] text-white text-center font-bold mt-10"><span class="text-red-700">GSI</span> HOME PRODUCTION</h1>
      </header>
@@ -237,12 +245,14 @@
                     <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
-              <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
-                <img src="./img/Profile/lala.jpg" alt="">
-                <button class="btn-play text-white z-50 ">PLAY</button>
-                  <button class="btn-flip z-50">
-                    <div class="circle bg-white"></div>
-                  </button>
+                <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
+                  <img src="./img/Profile/lala.jpg" alt="">
+                  <a href="" target="_blank">
+                    <button class="btn-play text-white z-50 ">PLAY</button>
+                  </a>
+                    <button class="btn-flip z-50">
+                      <div class="circle bg-white"></div>
+                    </button>
               </div>
               <div class="back">
                 <p class="z-50 text-white">
@@ -289,7 +299,9 @@
                           </div>
                         <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
                           <img src="${card.image}" alt="">
-                          <button class="btn-play text-white z-50 ">PLAY</button>
+                          <a href="${card.link}" target="_blank">
+                            <button class="btn-play text-white z-50 ">PLAY</button>
+                          </a>
                             <button class="btn-flip z-50">
                               <div class="circle bg-white"></div>
                             </button>

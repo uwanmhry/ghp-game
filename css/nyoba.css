@@ -134,6 +134,10 @@ body {
   transform:  rotateY(180deg)
 }
 
+/* Nonaktifkan tombol PLAY jika elemen .back terlihat */
+
+
+
 .swiper-slide-active .back p  {
   position: absolute;
   top: 75%;

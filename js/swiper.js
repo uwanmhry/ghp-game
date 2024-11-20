@@ -23,16 +23,16 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1, // 1 slide per view di layar kecil
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2, // 2 slide per view di layar medium
+      slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 3, // 3 slide per view di layar besar
+      slidesPerView: 3,
     },
     1300: {
-      slidesPerView: 3, // 3 slide per view di layar besar
+      slidesPerView: 3,
     },
   },
 });
