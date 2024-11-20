@@ -1,5 +1,6 @@
 const swiper = new Swiper(".swiper", {
   initialSlide: 3,
+  direction: "horizontal",
   centeredSlides: true,
   loop: true,
   speed: 900,
@@ -28,6 +29,9 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2, // 2 slide per view di layar medium
     },
     1200: {
+      slidesPerView: 3, // 3 slide per view di layar besar
+    },
+    1300: {
       slidesPerView: 3, // 3 slide per view di layar besar
     },
   },

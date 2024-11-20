@@ -4,33 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GSI Home Production</title>
-    <link
-      rel="shortcut icon"
-      href="img/Icon/logo-ghp.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="img/Icon/logo-ghp.png" type="image/x-icon" />
     <script src="js/script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
   </head>
   <body class="bg-gray-900 text-white font-sans">
-    <!-- Navigation Bar -->
-    <nav
-      id="navbar"
-      class="fixed top-0 left-0 w-full bg-black shadow-lg z-50 transition-transform duration-300"
-    >
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-black shadow-lg z-50 transition-transform duration-300">
       <div class="flex items-center justify-between px-4 py-3">
         <div class="flex items-center">
           <a href="#">
-            <img
-              src="img/Icon/logo-ghp.png"
-              alt="Logo"
-              class="w-10 h-10 mr-2"
-            />
+            <img src="img/Icon/logo-ghp.png" alt="Logo" class="w-10 h-10 mr-2"/>
           </a>
           <a href="#">
             <h1 class="text-2xl font-bold">GSI Home Production</h1>
@@ -38,35 +24,19 @@
         </div>
         <div class="flex items-center relative">
           <a href="#home" class="nav-link mr-4">Home</a>
-
-          <!-- Dropdown -->
           <div class="relative group">
             <a href="#about" class="nav-link mr-4">About</a>
-            <div
-              class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white/30 backdrop-blur-md text-white shadow-lg rounded-lg w-48 z-10 border border-white/20"
-            >
-              <a
-                href="#flappy-hijaiyah"
-                class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-t-lg"
-              >
+            <div class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white/30 backdrop-blur-md text-white shadow-lg rounded-lg w-48 z-10 border border-white/20">
+              <a href="#flappy-hijaiyah" class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-t-lg">
                 Flappy Hijaiyah
               </a>
-              <a
-                href="#santri-bros"
-                class="px-4 py-2 hover:bg-white/20 transition-colors duration-200"
-              >
+              <a href="#santri-bros" class="px-4 py-2 hover:bg-white/20 transition-colors duration-200">
                 Santri Bros
               </a>
-              <a
-                href="#writting-hijaiyah"
-                class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-b-lg"
-              >
+              <a href="#writting-hijaiyah" class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-b-lg">
                 Writting
               </a>
-              <a
-                href="#match-3-hijaiyah"
-                class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-b-lg"
-              >
+              <a href="#match-3-hijaiyah" class="px-4 py-2 hover:bg-white/20 transition-colors duration-200 rounded-b-lg">
                 Match 3 Hijaiyah
               </a>
             </div>
@@ -77,19 +47,15 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
-      id="home"
-      class="relative bg-cover bg-center h-screen overflow-hidden"
-    >
+    <section id="home" class="relative bg-cover bg-center h-screen overflow-hidden">
       <!-- Video Background -->
       <video
         src="vid/Flappy Hijaiyah.mp4"
         class="absolute top-0 left-0 w-full h-full object-cover"
         autoplay
         muted
-        loop
-      ></video>
-
+        loop>
+      </video>
       <!-- Gradient Overlay -->
       <div
         class="absolute inset-0"
@@ -102,9 +68,8 @@
             rgba(255, 0, 0, 0.25),
             rgba(0, 0, 0, 0.85),
             rgba(0, 0, 0, 0.75)
-          );
-        "
-      ></div>
+          );">
+      </div>
 
       <!-- Content -->
       <div class="absolute inset-0 flex items-center px-8">
@@ -116,14 +81,9 @@
             ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
             molestie.
           </p>
-          <a
-            href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html" target="_blank" rel="noopener noreferrer">
             <button
-              class="flex items-center bg-[#FF0000] text-white font-semibold py-1 px-3 rounded-full text-md hover:bg-opacity-80 duration-300"
-            >
+              class="flex items-center bg-[#FF0000] text-white font-semibold py-1 px-3 rounded-full text-md hover:bg-opacity-80 duration-300">
               PLAY
               <span class="material-icons text-md">play_arrow</span>
             </button>
@@ -146,14 +106,8 @@
           rgba(0, 0, 0, 0.85),
           rgba(0, 0, 0, 0.85),
           rgba(0, 0, 0, 0.85)
-        );
-      "
-    >
-      <!-- Content -->
-      <div
-        class="flex flex-col lg:flex-row items-center lg:max-w-5xl mx-auto space-y-6 lg:space-y-0 lg:space-x-6 text-center px-4 lg:px-8"
-      >
-        <!-- Text -->
+        );">
+      <div class="flex flex-col lg:flex-row items-center lg:max-w-5xl mx-auto space-y-6 lg:space-y-0 lg:space-x-6 text-center px-4 lg:px-8">
         <div class="lg:w-1/2 text-left">
           <h2 class="text-3xl font-bold text-white mb-8">Flappy Hijaiyah</h2>
           <p class="text-base lg:text-md mb-4 text-white">
@@ -188,9 +142,8 @@
                 to right,
                 rgba(255, 0, 0, 0.4),
                 rgba(0, 0, 0, 0.333)
-              );
-            "
-          ></div>
+              );">
+          </div>
         </div>
       </div>
 
@@ -259,483 +212,105 @@
       </div>
     </section>
 
-    <!-- Games Section -->
-    <section
-      id="games"
-      class="py-16"
-      style="
-        background: linear-gradient(
-          to bottom right,
-          rgba(0, 0, 0, 0.85),
-          rgba(0, 0, 0, 0.85),
-          rgba(0, 0, 0, 0.85),
-          rgba(0, 0, 0, 0.75),
-          rgba(255, 0, 0, 0.15),
-          rgba(255, 0, 0, 0.25),
-          rgba(255, 0, 0, 0.25)
-        );
-      "
-    >
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold">Daftar Game</h2>
-      </div>
-      <!-- Game Item -->
-      <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto"
-      >
-        <!-- Game 1 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.jpg"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              FLAPPY HIJAIYAH
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Uwan.png"
-                alt="Profile Image of Uwan"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Uwan Maharaya/p></p>
+    <section id="games">
+      <header class="w-full">
+        <h1 class="text-[3rem] text-white text-center font-bold mt-10"><span class="text-red-700">GSI</span> HOME PRODUCTION</h1>
+     </header>
+      <div class="swiper">
+        <div class="swiper-wrapper" id="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="front">
+                <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-[60px] h-full flex justify-center items-center rounded-full">
+                  <p
+                    id="title"
+                    class="text-white text-md tracking-widest"
+                    style="writing-mode: vertical-rl; text-orientation: mixed"
+                  >
+                    SANTRI BROS
+                  </p>
+                  <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
+                    <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
+                  </div>
+                </div>
+              <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
+                <img src="./img/Profile/lala.jpg" alt="">
+                <button class="btn-play text-white z-50 ">PLAY</button>
+                  <button class="btn-flip z-50">
+                    <div class="circle bg-white"></div>
+                  </button>
               </div>
+              <div class="back">
+                <p class="z-50 text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ex eligendi. Sit laboriosam, minus commodi ullam quae nihil magni tempora totam sunt, dolores aliquid repudiandae fugiat fugit et minima recusandae!
+                </p>
+                <div class="h-[450px] absolute w-full bg-gradient-to-t from-black z-10 to-transparent"></div>
+                <img class="img-profile" src="./img/Profile/Fajari.png" alt="">
+                <button class="btn-flip-back w-10 h-10 text-white bg-blacks z-50">
+                  <div class="circle-back bg-white"></div>
+                </button>
+              </div>  
             </div>
-            <a
-              href="https://gd.games/instant-builds/6370209f-7812-459c-8b97-794f8c545a68"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
           </div>
-        </div>
 
-        <!-- Game 2 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Santri-Bros.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              SANTRI BROS
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Rizky.png"
-                alt="Profile Image of Rizky"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Rizky Herdiansyah</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
+          <script>
+            fetch(`./json/card.json`)
+              .then(respones => respones.json())
+              .then(data => {
+                console.log(data);
+                const swipWrapper = document.getElementById('swiper-wrapper');
+                const cards = data.array;
+                if (!cards || cards.length === 0) {
+                  return
+                }
 
-        <!-- Game 3 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Writting.png.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              WRITTING HIJAIYAH
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Fajari.png"
-                alt="Profile Image of Fajari"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">M. Saepul Fajari</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
+              cards.forEach(card => {
+                const slide = document.createElement('div');
+                slide.classList.add('swiper-slide');
+                slide.innerHTML = 
+                    `<div class="swiper-slide">
+                      <div class="card">
+                        <div class="front">
+                         <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-[60px] h-[470px] flex justify-center items-center rounded-full">
+                            <p
+                              id="title"
+                              class="text-white font-bold text-md tracking-widest"
+                              style="writing-mode: vertical-rl; text-orientation: mixed"
+                            >
+                              ${card.title}
+                            </p>
+                            <div class="absolute top-5 right-[20px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
+                              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
+                            </div>
+                          </div>
+                        <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
+                          <img src="${card.image}" alt="">
+                          <button class="btn-play text-white z-50 ">PLAY</button>
+                            <button class="btn-flip z-50">
+                              <div class="circle bg-white"></div>
+                            </button>
+                        </div>
+                        <div class="back">
+                          <p class="z-50 text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ex eligendi. Sit laboriosam, minus commodi ullam quae nihil magni tempora totam sunt, dolores aliquid repudiandae fugiat fugit et minima recusandae!
+                          </p>
+                          <div class="h-[450px] absolute w-full bg-gradient-to-t from-black z-10 to-transparent"></div>
+                          <img class="img-profile" src="./img/Profile/Fajari.png" alt="">
+                        </div>  
+                      </div>
+                    </div>`;
+                swipWrapper.appendChild(slide);
+              });
+            })
 
-        <!-- Game 4 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              CATCHING THE HIJAIYAH
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Hady.png"
-                alt="Profile Image of Hady"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Hady Satria Pamungkas</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
+            .catch(error => console.log(`Error Fetching Datas`,error))
 
-      <!-- Game Item 2 -->
-      <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto mt-12"
-      >
-        <!-- Game 1 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnain-M3H.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              MATCH 3 HIJAIYAH
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Uwan.png"
-                alt="Profile Image of Uwan"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Uwan Maharaya/p></p>
-              </div>
-            </div>
-            <a
-              href="https://gd.games/instant-builds/42c19a49-124e-4e57-9393-c6e52c98fbd3"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
+          </script> 
         </div>
-
-        <!-- Game 2 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Santri-Bros.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              SANTRI BROS
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Rizky.png"
-                alt="Profile Image of Rizky"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Rizky Herdiansyah</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Game 3 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Quiz.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              QUIZ
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Fajari.png"
-                alt="Profile Image of Fajari"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">M. Saepul Fajari</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <!-- Game 4 -->
-        <div
-          class="relative max-w-xs rounded-xl overflow-hidden shadow-lg text-white"
-          style="width: 270px; height: 350px"
-        >
-          <img
-            class="object-cover w-full h-full"
-            src="./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png"
-            alt="Game Image"
-          />
-          <div
-            class="w-full h-[70%] absolute bottom-0 bg-gradient-to-t from-black to-transparent"
-          ></div>
-          <div
-            class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-10 h-full flex justify-center items-center rounded-tr-xl rounded-br-xl"
-          >
-            <p
-              id="title"
-              class="text-white text-md tracking-widest"
-              style="writing-mode: vertical-rl; text-orientation: mixed"
-            >
-              CATCHING THE HIJAIYAH
-            </p>
-            <div
-              class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center"
-            >
-              <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
-            </div>
-          </div>
-          <div class="absolute bottom-5 left-0 px-6">
-            <div class="flex items-center mb-4">
-              <img
-                class="w-10 h-10 border-2 rounded-full mr-2"
-                src="./img/Profile/Hady.png"
-                alt="Profile Image of Hady"
-              />
-              <div>
-                <p class="font-semibold text-sm">Created By.</p>
-                <p class="text-md text-gray-300">Hady Satria Pamungkas</p>
-              </div>
-            </div>
-            <a
-              href="https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                class="flex items-center bg-gradient-to-r from-[#FF0000] to-[#FFA600] hover:from-[#E20004] hover:to-[#E29300] text-white font-bold py-1 px-3 rounded-full text-xs hover:bg-opacity-80 duration-300"
-              >
-                <span class="material-icons text-base">play_arrow</span>
-                PLAY
-              </button>
-            </a>
-          </div>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
