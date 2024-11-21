@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/index.css">
 
   </head>
-  <body class="bg-gray-900 text-white font-sans">
+  <body class="bg-black text-white font-sans">
     <!-- Hero Section -->
     <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent z-50 transition-transform duration-300">
       <div class="flex items-center justify-between px-4 py-3">
@@ -97,9 +97,9 @@
       style="
         background: linear-gradient(
           to bottom right,
+          /* rgba(255, 0, 0, 0.25),
           rgba(255, 0, 0, 0.25),
-          rgba(255, 0, 0, 0.25),
-          rgba(255, 0, 0, 0.15),
+          rgba(255, 0, 0, 0.15), */
           rgba(0, 0, 0, 0.75),
           rgba(0, 0, 0, 0.85),
           rgba(0, 0, 0, 0.85),
@@ -212,19 +212,7 @@
 
     <!-- Games Section -->
 
-    <section id="games"  
-      style="
-      background: linear-gradient(
-      to bottom right,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.85),
-      rgba(255, 0, 0, 0.15),
-      rgba(255, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.85)
-      
-    );">
+    <section id="games">
       <header class="w-full">
         <h1 class="text-[3rem] text-white text-center font-bold mt-10"><span class="text-red-700">GSI</span> HOME PRODUCTION</h1>
      </header>
@@ -233,7 +221,7 @@
           <div class="swiper-slide">
             <div class="card">
               <div class="front">
-                <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-[60px] h-full flex justify-center items-center rounded-full">
+                <div class="absolute top-0 right-0 bg-gradient-to-b from-[#FF0000] to-[#FFA600] w-[60px] h-[470px] flex justify-center items-center rounded-full">
                   <p
                     id="title"
                     class="text-white text-md tracking-widest"
@@ -241,11 +229,11 @@
                   >
                     SANTRI BROS
                   </p>
-                  <div class="absolute bottom-5 right-[10px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
+                  <div class="absolute top-5 right-[20px] mx-auto border-2 bg-transparent rounded-full w-5 h-5 flex justify-center items-center">
                     <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </div>
-                <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
+                <div class="h-[200px] absolute bottom-[-10px] w-full bg-gradient-to-t from-black to-transparent z-10"></div>
                   <img src="./img/Profile/lala.jpg" alt="">
                   <a href="" target="_blank">
                     <button class="btn-play text-white z-50 ">PLAY</button>
@@ -297,7 +285,7 @@
                               <div class="m-auto w-2 h-2 bg-white rounded-full"></div>
                             </div>
                           </div>
-                        <div class="h-[200px] absolute bottom-[-10px]  w-full bg-gradient-to-t from-black to-transparent z-10"></div>
+                         <div class="h-[200px] absolute bottom-[-10px] w-full bg-gradient-to-t from-black to-transparent z-10"></div>
                           <img src="${card.image}" alt="">
                           <a href="${card.link}" target="_blank">
                             <button class="btn-play text-white z-50 ">PLAY</button>
@@ -308,10 +296,9 @@
                         </div>
                         <div class="back">
                           <p class="z-50 text-white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ex eligendi. Sit laboriosam, minus commodi ullam quae nihil magni tempora totam sunt, dolores aliquid repudiandae fugiat fugit et minima recusandae!
                           </p>
                           <div class="h-[450px] absolute w-full bg-gradient-to-t from-black z-10 to-transparent"></div>
-                          <img class="img-profile" src="./img/Profile/Fajari.png" alt="">
+                          <img class="img-profile" src="${card.profileImage}" alt="">
                         </div>  
                       </div>
                     </div>`;

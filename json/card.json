@@ -49,7 +49,7 @@
     {
         "id": 6,
         "image": "./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png",
-        "title": " CATCHING THE HIJAIYAH",
+        "title": "CATCHING THE HIJAIYAH",
         "name": "Hady Satria P.",
         "profileImage": "./img/Profile/Hady.png",
         "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
@@ -57,8 +57,8 @@
     
     {
         "id": 7,
-        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
-        "title": " HUNTER HIJAIYAH",
+        "image": "./img/Profile/lala.jpg",
+        "title": "HUNTER HIJAIYAH",
         "name": "Abdul Aziz",
         "profileImage": "./img/Profile/Aziz.png",
         "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
