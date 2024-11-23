@@ -1,67 +1,66 @@
 {
- "array":[
-    
+  "array": [
     {
-        "id": 1,
-        "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
-        "title": "GAME SANTRI BROS",
-        "name": "Rizky Herdiansyah",
-        "profileImage": "./img/Profile/Rizky.png",
-        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697/index.html"
+      "id": 1,
+      "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
+      "title": "GAME SANTRI BROS",
+      "name": "Rizky Herdiansyah",
+      "profileImage": "./img/Profile/Rizky.png",
+      "link": "https://gd.games/instant-builds/8b82b9e9-de6c-48d2-9c75-cd53b9dd78e4"
     },
 
     {
-        "id": 2,
-        "image": "./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.jpg",
-        "title": "FLAPPY HIJAIYAH",
-        "name": "Uwan Maharaya",
-        "profileImage": "./img/Profile/Uwan.png",
-        "link":  "https://gd.games/instant-builds/72c4ab75-af1e-4f7d-9d5e-2de7a41be85d" 
+      "id": 2,
+      "image": "./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.jpg",
+      "title": "FLAPPY HIJAIYAH",
+      "name": "Uwan Maharaya",
+      "profileImage": "./img/Profile/Uwan.png",
+      "link": "https://gd.games/instant-builds/72c4ab75-af1e-4f7d-9d5e-2de7a41be85d"
     },
 
     {
-        "id": 3,
-        "image": "./img/Thumbnail/Thumbnain-M3H.png",
-        "title": "MATCH 3 HIJAIYAH",
-        "name": "Uwan Maharaya",
-        "profileImage": "./img/Profile/Uwan.png",
-        "link":  "hhttps://gd.games/instant-builds/60e1a103-6d8d-4b82-8d82-c3a265674ed0" 
+      "id": 3,
+      "image": "./img/Thumbnail/Thumbnain-M3H.png",
+      "title": "MATCH 3 HIJAIYAH",
+      "name": "Uwan Maharaya",
+      "profileImage": "./img/Profile/Uwan.png",
+      "link": "hhttps://gd.games/instant-builds/60e1a103-6d8d-4b82-8d82-c3a265674ed0"
     },
 
     {
-        "id": 4,
-        "image": "./img/Thumbnail/Thumbnail-Writting.png.png",
-        "title": "WRITTING HIJAIYAH",
-        "name": "Saepul Fajari",
-        "profileImage": "./img/Profile/Fajari.png",
-        "link": "https://gd.games/instant-builds/9e02016c-52bb-4b5f-b1c6-fa60204a0eb9"
+      "id": 4,
+      "image": "./img/Thumbnail/Thumbnail-Writting.png.png",
+      "title": "WRITTING HIJAIYAH",
+      "name": "Saepul Fajari",
+      "profileImage": "./img/Profile/Fajari.png",
+      "link": "https://gd.games/instant-builds/9e02016c-52bb-4b5f-b1c6-fa60204a0eb9"
     },
 
     {
-        "id": 5,
-        "image": "./img/Thumbnail/Thumbnail-Quiz.png",
-        "title": "QUIZ ISLAMIC",
-        "name": "Saepul Fajari",
-        "profileImage": "./img/Profile/Fajari.png",
-        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+      "id": 5,
+      "image": "./img/Thumbnail/Thumbnail-Quiz.png",
+      "title": "QUIZ ISLAMIC",
+      "name": "Saepul Fajari",
+      "profileImage": "./img/Profile/Fajari.png",
+      "link": "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
     },
 
     {
-        "id": 6,
-        "image": "./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png",
-        "title": "CATCHING THE HIJAIYAH",
-        "name": "Hady Satria P.",
-        "profileImage": "./img/Profile/Hady.png",
-        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+      "id": 6,
+      "image": "./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png",
+      "title": "CATCHING THE HIJAIYAH",
+      "name": "Hady Satria P.",
+      "profileImage": "./img/Profile/Hady.png",
+      "link": "https://gd.games/instant-builds/850900e5-c41b-4146-9584-8d3f8269e38f"
     },
-    
+
     {
-        "id": 7,
-        "image": "./img/Profile/lala.jpg",
-        "title": "HUNTER HIJAIYAH",
-        "name": "Abdul Aziz",
-        "profileImage": "./img/Profile/Aziz.png",
-        "link":  "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
+      "id": 7,
+      "image": "./img/Thumbnail/Thumbnail-Quiz.png",
+      "title": "HUNTER HIJAIYAH",
+      "name": "Abdul Aziz",
+      "profileImage": "./img/Profile/Aziz.png",
+      "link": "https://games.gdevelop-app.com/game-b061005c-e2cb-4798-843a-eff4f430c697"
     }
-    ]
+  ]
 }
