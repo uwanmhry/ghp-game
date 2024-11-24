@@ -1,16 +1,8 @@
 {
   "array": [
-    {
-      "id": 1,
-      "image": "./img/Thumbnail/Thumbnail-Santri-Bros.png",
-      "title": "GAME SANTRI BROS",
-      "name": "Rizky Herdiansyah",
-      "profileImage": "./img/Profile/Rizky.png",
-      "link": "https://gd.games/instant-builds/8b82b9e9-de6c-48d2-9c75-cd53b9dd78e4"
-    },
 
     {
-      "id": 2,
+      "id": 1,
       "image": "./img/Thumbnail/Thumbnail-Flappy-Hijaiyah.jpg",
       "title": "FLAPPY HIJAIYAH",
       "name": "Uwan Maharaya",
@@ -19,7 +11,7 @@
     },
 
     {
-      "id": 3,
+      "id": 2,
       "image": "./img/Thumbnail/Thumbnain-M3H.png",
       "title": "MATCH 3 HIJAIYAH",
       "name": "Uwan Maharaya",
@@ -28,7 +20,7 @@
     },
 
     {
-      "id": 4,
+      "id": 3,
       "image": "./img/Thumbnail/Thumbnail-Writting.png.png",
       "title": "WRITTING HIJAIYAH",
       "name": "Saepul Fajari",
@@ -37,7 +29,7 @@
     },
 
     {
-      "id": 5,
+      "id": 4,
       "image": "./img/Thumbnail/Thumbnail-Quiz.png",
       "title": "QUIZ ISLAMIC",
       "name": "Saepul Fajari",
@@ -46,7 +38,7 @@
     },
 
     {
-      "id": 6,
+      "id": 5,
       "image": "./img/Thumbnail/Thumbnail-Catching-the-hijaiyah.png",
       "title": "CATCHING THE HIJAIYAH",
       "name": "Hady Satria P.",
@@ -55,8 +47,8 @@
     },
 
     {
-      "id": 7,
-      "image": "./img/Thumbnail/Thumbnail-Quiz.png",
+      "id": 6,
+      "image": "./img/Thumbnail/Thumbnail-Car-Hijjayyah.jpg",
       "title": "HUNTER HIJAIYAH",
       "name": "Abdul Aziz",
       "profileImage": "./img/Profile/Aziz.png",
